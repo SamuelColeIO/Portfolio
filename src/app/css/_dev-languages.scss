@@ -1,0 +1,153 @@
+.devlanguage {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 10px;
+  color: $light-grey-color;
+  @include easeInOutAll(0.5s);
+  @include large-mobile {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+  }
+  @include tablet {
+    height: 70px;
+    width: 70px;
+    font-size: 43px;
+  }
+  @include desktop {
+    height: 70px;
+    width: 70px;
+    font-size: 43px;
+  }
+  @include large-desktop {
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+  }
+  & i {
+    width: 11px;
+    margin: 0px auto;
+    padding-top: 6px;
+    display: block;
+    position: relative;
+    @include large-mobile {
+      width: 31px;
+      padding-top: 11px;
+    }
+    @include tablet {
+      width: 45px;
+      padding-top: 14px;
+    }
+    @include desktop {
+      width: 45px;
+      padding-top: 14px;
+    }
+    @include large-desktop {
+      width: 52px;
+      padding-top: 27px;
+    }
+  }
+  &--typescript {
+    background-color: $primary-color;
+  }
+  &--angular-js {
+    background-color: #48606d;
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+  &--angular-2 {
+    background-color: #618595;
+  }
+  &--es6 {
+    background-color: #567281;
+  }
+  &--jquery {
+    background-color: #5c7b8c;
+  }
+  &--html5 {
+    background-color: #557381;
+  }
+  &--jasmine {
+    background-color: #557381;
+  }
+  &--karma {
+    background-color: #5c7b8c;
+  }
+  &--sass {
+    background-color: #557381;
+  }
+  &--css3 {
+    background-color: #48606d;
+  }
+  &--gulp {
+    background-color: #618595;
+  }
+  &--grunt {
+    background-color: #567281;
+  }
+  &--git {
+    background-color: #5c7b8c;
+  }
+  &--jira {
+    background-color: #48616d;
+  }
+  &--bootstrap {
+    background-color: #5c7b8c;
+  }
+  &--agile {
+    display: none;
+    background-color: #48616d;
+    text-align: center;
+    line-height: 40px;
+    @include tablet {
+      display: inline-block;
+      line-height: 50px;
+    }
+    @include large-desktop {
+      line-height: 80px;
+    }
+  }
+  &__js-sub {
+    display: none;
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+    @include tablet {
+      display: inline-block;
+      bottom: -8px;
+      right: 2px;
+    }
+    @include desktop {
+      bottom: -8px;
+      right: 2px;
+    }
+    @include large-desktop {
+      bottom: -9px;
+      right: -3px;
+    }
+  }
+  &__es6-sub {
+    display: none;
+    position: absolute;
+    bottom: -11px;
+    right: -8px;
+    @include tablet {
+      display: inline-block;
+      bottom: -11px;
+      right: -10px;
+    }
+    @include desktop {
+      bottom: -11px;
+      right: -10px;
+    }
+    @include large-desktop {
+      bottom: -19px;
+      right: -19px;
+    }
+
+  }
+}

@@ -1,0 +1,218 @@
+.projects {
+  height: 100%;
+  position: relative;
+  background-color: #aabac1;
+  overflow: hidden;
+  &__heading {
+    width: 100%;
+    margin: 0px auto 25px;
+    padding-top: 25px;
+    text-align: center;
+    @include tablet {
+      padding-top: 55px;
+    }
+  }
+  &__languages-container {
+    height: 20px;
+    width: 100%;
+    float: left;
+    display: none;
+    font-size: 0px;
+    text-align: center;
+    overflow: hidden;
+    @include large-mobile {
+      display: block;
+      height: 50px;
+    }
+    @include tablet {
+      height: auto;
+      width: 70px;
+      margin-top: 40px;
+      overflow: unset;
+      @include boxShadow;
+    }
+    @include desktop {
+      width: 70px;
+      margin-top: 60px;
+    }
+    @include large-desktop {
+      height: 400px;
+      width: 200px;
+    }
+    &:nth-child(1) {
+      display: none;
+      @include tablet {
+        display: block;
+      }
+    }
+    &:nth-child(3) {
+      @include tablet {
+        float: right;
+      }
+    }
+  }
+  &__languages-mobile {
+    display: inline;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__projects-outer-container {
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    @include large-mobile {
+      width: 400px;
+    }
+    @include tablet {
+      height: 45%;
+      width: 400px;
+      padding: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @include desktop {
+      height: 400px;
+      width: 520px;
+    }
+    @include large-desktop {
+      width: 470px;
+    }
+    @include extra-large-desktop {
+      width: 680px;
+    }
+  }
+  &__caret {
+    position: absolute;
+    top: 27%;
+    left: -20px;
+    color: $secondary-color;
+    font-size: 110px;
+    cursor: pointer;
+    z-index: 5;
+    @include textShadow;
+    @include easeInOutAll(0.5s);
+    @include button-hover($secondary-color);
+    @include tablet {
+      top: 10%;
+      left: -81px;
+      font-size: 180px;
+    }
+    @include desktop {
+      top: 24%;
+    }
+    &--right {
+      top: 27%;
+      left: auto;
+      right: -20px;
+      @include tablet {
+        top: 10%;
+        right: -84px;
+      }
+      @include desktop {
+        top: 24%;
+      }
+    }
+  }
+  &__projects-image-container {
+    height: 220px;
+    margin: 0px auto;
+    background: #48606c;
+    position: relative;
+    z-index: 1;
+    @include boxShadow;
+    @include desktop {
+      height: 280px;
+    }
+    @include large-desktop {
+      height: 280px;
+    }
+    @include extra-large-desktop {
+      height: 350px;
+    }
+  }
+  &__project-image {
+    height: 180px;
+    width: 80%;
+    width: calc(100% - 40px);
+    display: block;
+    position: relative;
+    top: 20px;
+    margin: 0px auto;
+    @include easeInOutOpacity;
+    @include large-mobile {
+      width: 360px;
+    }
+    @include tablet {
+      width: 320px;
+    }
+    @include desktop {
+      height: 240px;
+      width: 440px;
+    }
+    @include large-desktop {
+      height: 240px;
+      width: 390px;
+    }
+    @include extra-large-desktop {
+      height: 310px;
+      width: 600px;
+    }
+  }
+  &__projects-description-container {
+    height: 220px;
+    margin: 0px auto;
+    padding: 20px;
+    position: relative;
+    background: #aabac1;
+    text-align: left;
+    @include desktop {
+      height: 330px;
+    }
+  }
+  &__project-title {
+    width: 80%;
+    margin-bottom: 15px;
+    display: block;
+  }
+  &__project-description-1 {
+    width: 80%;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    @include easeInOutOpacity;
+  }
+  &__project-description-2 {
+    width: 80%;
+    display: block;
+    color: white;
+    @include easeInOutOpacity;
+  }
+  &__external-link {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    text-decoration: none;
+    & i {
+      font-size: 30px;
+      color: white;
+      &:hover { 
+        color: $secondary-color;
+      }
+    }
+  }
+  &__github {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    text-decoration: none;
+    & i {
+      font-size: 40px;
+      color: white;
+      &:hover { 
+        color: $secondary-color;
+      }
+    }
+  }
+}

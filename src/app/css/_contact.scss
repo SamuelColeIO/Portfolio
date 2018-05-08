@@ -1,0 +1,52 @@
+.contact {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  &__heading {
+    width: 100%;
+    margin: 0px auto 25px;
+    padding-top: 25px;
+    text-align: center;
+    @include tablet {
+      padding-top: 55px;
+    }
+  }
+  &__question {
+    width: 100%;
+    margin: 0px auto 25px;
+    padding: 18% 10px 0px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    & span {
+      color: $primary-color;
+    }
+  }
+  &__details {
+    width: 100%;
+    margin: 0px auto 25px;
+    padding-top: 15px;
+    text-align: center;
+    & i {
+      margin-bottom: 10px;
+      font-size: 50px;
+      color: $primary-color;
+      cursor: pointer;
+      @include button-hover($primary-color);
+    }
+  }
+  &__email {
+    margin-bottom: 10px;
+    display: block;
+    color: $primary-color;
+    text-decoration: none;
+    cursor: pointer;
+    @include button-hover($primary-color);
+  }
+  &__phone {
+    display: block;
+    color: $primary-color;
+    text-decoration: none;
+    cursor: pointer;
+    @include button-hover($primary-color);
+  }
+}

@@ -1,0 +1,54 @@
+@mixin parallelogram() {
+  transform: skew(-15deg);
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(-15deg);
+  -o-transform: skew(-15deg);
+  transform: rotate(5deg);
+  & > * {
+    display: block;
+    transform: skew(0deg);
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+    transform: rotate(-5deg);
+  }
+}
+
+@mixin easeInOutOpacity() {
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+@mixin easeInOutAll($speed) {
+  -webkit-transition: all $speed ease-in-out;
+  -moz-transition: all $speed ease-in-out;
+  -ms-transition: all $speed ease-in-out;
+  -o-transition: all $speed ease-in-out;
+  transition: all $speed ease-in-out;
+}
+
+@mixin boxShadow() {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+
+@mixin textShadow() {
+  text-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+}
+
+@mixin arrowShadow() {
+  text-shadow: 3px 6px 6px rgba(0, 0, 0, 0.15), 5px 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+@mixin button-hover($background) {
+  color: $background;
+  &:hover {
+    color:darken($background,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    color:darken($background,25%);
+  } 
+}

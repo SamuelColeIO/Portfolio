@@ -1,0 +1,18 @@
+.navigate-arrow {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  font-size: 60px;
+  color: $secondary-color;
+  cursor: pointer;
+  z-index: 2;
+  @include arrowShadow;
+  @include button-hover($secondary-color);
+  @include tablet {
+    right: 100px;
+    bottom: 100px;
+  }
+  &--active {
+    animation: shake 0.5s; 
+  }
+}

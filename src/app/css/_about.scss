@@ -1,0 +1,104 @@
+.about {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  &__image-container {
+    height: 30%;
+    width: 100%;
+    margin-top: 10%;
+    float: left;
+    @include large-mobile {
+      height: 40%;
+    }
+    @include desktop {
+      height: 400px;
+      width: 60%;
+    }
+    @include large-desktop {
+      height: 400px;
+      width: 50%;
+    }
+  }
+  &__image {
+    width: 120px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+    text-align: center;
+    @include boxShadow;
+    @include parallelogram;
+    @include large-mobile {
+      width: 160px;
+      height: 160px;
+    }
+    @include tablet {
+      width: 220px;
+      height: 220px;
+    }
+    @include desktop {
+      width: 300px;
+      height: 300px;
+      margin: 0;
+    }
+    &:nth-child(1) {
+      background: $primary-color;
+      bottom: -20px;
+      left: -60px;
+      @include tablet {
+        bottom: 50px;
+        left: -150px;
+      }
+      @include desktop {
+        bottom: 50px;
+        left: 0px;
+      }
+    }
+    &:nth-child(2) {
+      background: #AD7A99;
+      bottom: 125px;
+      left: 50px;
+      @include tablet {
+        bottom: 180px;
+        left: 200px;
+      }
+    }
+    &:nth-child(3) {
+      background: $tertiary-color;
+      bottom: 150px;
+      left: -10px;
+      @include tablet {
+        bottom: 300px;
+        left: 0px;
+      }
+    }
+    & img {
+      width: 60%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__text-container {
+    height: 35%;
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    @include desktop {
+      height: 400px;
+      width: 40%;
+      padding: 50px;
+    }
+    @include large-desktop {
+      width: 50%;
+    }
+  }
+  &__heading {
+    margin-bottom: 10px;
+    display: block;
+  }
+  &__text {
+    margin-bottom: 30px;
+    display: block;
+  }
+}

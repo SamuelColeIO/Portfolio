@@ -1,0 +1,70 @@
+.text-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  @include tablet {
+    font-size: 35px
+  }
+  &--emphasis {
+    color: $primary-color;
+  }
+}
+
+.text-title-small {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  @include tablet {
+    font-size: 30px
+  }
+  &--emphasis {
+    color: $primary-color;
+  }
+}
+
+.text-heading {
+  position: relative;
+  color: $dark-grey-color;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -7px;
+    height: 4px;
+    background-color: $dark-grey-color;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.text-heading-small {
+  position: relative;
+  color: $dark-grey-color;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.text-devlanguage {
+  font-size: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  @include tablet {
+    font-size: 11px;
+  }
+  @include desktop {
+    font-size: 12px;
+  }
+  @include large-desktop {
+    font-size: 15px;
+  }
+}
